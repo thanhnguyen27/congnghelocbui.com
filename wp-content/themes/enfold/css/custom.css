@@ -1,0 +1,224 @@
+/* Have fun adding your style here :) - PS: At all times this file should contain a comment or a rule, otherwise opera might act buggy :( */
+
+/* General Custom CSS */
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-map-marker:before {
+    content: "\f041";
+}
+.fa-phone:before {
+    content: "\f2a0";
+}
+.fa-envelope:before {
+    content: "\f0e0";
+}
+.av-main-nav > li > a {padding: 0 28px}
+#top #wrap_all #header #menu-item-search>a {    
+ background: #ffbc13;
+ text-align: center;
+ padding: 0 28px;
+}
+div#header_main {
+    background: #f3f3f5;
+}
+.top-info__block  span, 
+.top-info__block  span a {
+    color: rgba(34, 34, 34, 0.7);
+    display: block;
+    font-size: 12px;
+}
+/*fix icon search*/
+#top #wrap_all #header #menu-item-search>a:hover {
+    color: #fff;
+}
+/*fix category*/
+.home .post-entry span.blog-categories.minor-meta {
+    display: none !important;
+}
+.home .post-entry .slide-entry-title {
+    font-size: 12.5px !important;
+}
+/*fix footer*/
+#footer {
+    background: #1b1b1b url(../images/border.png) 0 -62px repeat-x;
+    position: relative;
+    z-index: 1;
+}
+/*
+Desktop Styles
+================================================== */
+/* Note: Add new css to the media query below that you want to only effect the desktop view of your site */
+
+@media only screen and (min-width: 768px) {
+  /* Add your Desktop Styles here */
+  .container.av-logo-container::before {
+    background: #ffbc13;
+    content: "";
+    height: 100%;
+    left: -50px;
+    position: absolute;
+    top: 0;
+    width: 30%;
+    -webkit-transform: skew(-30deg, 0deg);
+    transform: skew(-30deg, 0deg);
+
+	}
+	
+	.col-header-custom{
+	    display: block;
+	    /*max-width: 70%;
+	    float: right;
+	    flex: 0 0 100%;
+	    */
+    	margin-left: auto;
+    	margin-right: auto;
+		position:relative;
+		text-align: center;
+	}
+	 .col-md-12 {
+	    -webkit-box-flex: 0;
+	    -webkit-flex: 0 0 100%;
+	    -ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	}
+	.col-md-12 {
+		padding-right: 15px;
+	    padding-left: 15px;
+	}
+	.top-info__block {
+    	display: block !important;
+	}
+	.top-info__block {
+	    padding: 0px 20px;
+	    position: relative;
+	    z-index: 22;
+	    margin: 0 20px;
+	    max-height: 100px;
+	}
+	.text-right {
+    	text-align: right!important;
+	}
+	.top-info__block ul {
+	    list-style: outside none none;
+	   	overflow: hidden;
+	    max-height: 100px;
+	    text-align: center;
+	    margin-left:auto;
+	    margin-right:auto;
+	}
+	.top-info__block ul li {
+	    display: inline-block;
+	    position: relative;
+	    height: 100px;
+	}
+	.top-info__block li {
+    	/*border-right: 1px solid #cfcfd0;*/
+    	margin: 0 10px;
+	}
+	.top-info__block p {
+	    margin-right: 15px;
+	    padding-left: 50px;
+	    text-align: left;
+	    font-size: 15px;
+	    color: #222;
+	    font-weight: bold;
+	}
+	.top-info__block li i {
+		color: #ffbc13;
+	    font-size: 30px;
+	}
+	.top-info__block li i {
+	    
+	    height: 50px;
+	    right: -15px;
+	    line-height: 50px;
+	    margin-top: -20px;
+	    position: absolute;
+	    text-align: center;
+	    top: 50%;
+	    width: 50px;
+		
+	}
+	.top-info__block ul li a {
+	    position: relative;
+	    float: left;
+	    display: block;
+	    height: 100%;
+	    text-align: center;
+		font-size: 17px;
+		color: #222;
+		font-weight: bold;
+	}
+	.call-us span {
+	    height: 35%;
+	    width: 100%;
+	    float: left;
+	}
+	.call-us {
+	    display: block;
+	    position: relative;
+	    height: 100%;
+	    width: 100%;
+	    padding-bottom: 30px;
+    	margin-top: -10px;
+	    
+	}
+	.top-info__block p, .top-part__block p {
+    	margin: 0;
+	}
+}
+
+@media only screen and (min-width: 1200px){
+.col-xl-8 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 66.666667%;
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+.top-info__block ul {
+	    list-style: outside none none;
+	   	overflow: hidden;
+	    max-height: 100px;
+	    text-align: center;
+	    float: right;
+	    margin-bottom: 1px;
+	    padding-bottom: 1px;
+}
+.top-info__block li {
+    	/*border-right: 1px solid #cfcfd0;*/
+    	margin: 0 30px;
+}
+.top-info__block {
+	    padding: 0px 20px;
+	    position: relative;
+	    z-index: 22;
+	    margin: 0 20px;
+	}
+.top-info__block li i {
+		color: #ffbc13;
+	    font-size: 40px;
+	}
+	
+}
+/*
+Mobile Styles
+================================================== */
+/* Note: Add new css to the media query below that you want to only effect the Mobile and Tablet Portrait view */
+
+@media only screen and (max-width: 767px) {
+  /* Add your Mobile Styles here */
+  .col-header-custom {
+	display:none;
+	}
+	.top-info__block.text-center {
+    	display: none !important;
+	}
+}

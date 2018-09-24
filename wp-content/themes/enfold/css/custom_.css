@@ -1,0 +1,24 @@
+@charset "ISO-8859-1";
+.av-main-nav > li > a {padding: 0 28px}
+#top #wrap_all #header #menu-item-search>a {    
+ background: #ffbc13;
+ text-align: center;
+ padding: 0 28px;
+}
+div#header_main {
+    background: #f3f3f5;
+}
+@media only screen and (min-width: 768px)  {		
+.container.av-logo-container::before {
+    background: #ffbc13;
+    content: "";
+    height: 100%;
+    left: -50px;
+    position: absolute;
+    top: 0;
+    width: 30%;
+    -webkit-transform: skew(-30deg, 0deg);
+    transform: skew(-30deg, 0deg);
+
+}
+}
